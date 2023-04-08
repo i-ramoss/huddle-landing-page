@@ -1,0 +1,124 @@
+:root {
+  /* primary */
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+
+  /* neutral */
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  width: 100%;
+
+  font-family: "Open Sans", sans-serif;
+  background: url("./images/bg-desktop.svg") no-repeat var(--violet);
+  background-size: contain;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  color: var(--white);
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: var(--white);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.community {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info h1 {
+  max-width: 20ch;
+}
+
+.info p {
+  max-width: 50ch;
+}
+
+.info button {
+  max-width: 175px;
+  width: 100%;
+
+  padding: 1rem 0;
+  border: 0;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--violet);
+
+  box-shadow: 10px 10px 30px -10px#000000;
+
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+
+.info button:hover {
+  background-color: var(--soft-magenta);
+  color: var(--white);
+}
+
+.social-media {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  border: 2px solid var(--white);
+
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.icon:hover {
+  border-color: var(--soft-magenta);
+}
+
+.icon:hover i {
+  color: var(--soft-magenta);
+}
+
+.icon i {
+  font-size: 1.2rem;
+  color: var(--white);
+}
